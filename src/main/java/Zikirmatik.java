@@ -31,7 +31,6 @@ public class Zikirmatik {
     @Override
     public String toString() {
         return
-                "id :" +
-                        " counter :";
+                "id :" +  " counter :";
     }
 }

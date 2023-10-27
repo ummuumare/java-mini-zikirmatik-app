@@ -7,21 +7,24 @@ public class ZikirmatikService {
     Zikirmatik zikirmatik = new Zikirmatik();
 
     public void increase() {
-        zikirmatik.setCounter(count);
         count++;
+        zikirmatik.setCounter(count);
 
     }
 
     public void decrease() {
-        if (count > 0) {
-            zikirmatik.setCounter(count);
-            count--;
-        }
 
+        if (count > 0) {
+            count--;
+            zikirmatik.setCounter(count);
+        }
     }
 
     public void reset() {
-        System.out.println("Now it is reset time " + " *** " +  count);
+        count = 0;
+        zikirmatik.setCounter(count);
+        System.out.println("Now it is reset time " + " *** " + count);
+
     }
 
     public void displayMenu() {
@@ -51,7 +54,7 @@ public class ZikirmatikService {
                     reset();
                     break;
                 case 4:
-                    System.out.println("********* You are exit  ************");
+                    System.out.println("********* You are exit   ************");
                     isWork = false;
                     break;
             }
