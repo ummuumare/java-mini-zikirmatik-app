@@ -9,7 +9,6 @@ public class ZikirmatikService {
     public void increase() {
         count++;
         zikirmatik.setCounter(count);
-
     }
 
     public void decrease() {
@@ -28,7 +27,6 @@ public class ZikirmatikService {
     }
 
     public void displayMenu() {
-
 
         do {
             System.out.println("Zikirmatik Application");
